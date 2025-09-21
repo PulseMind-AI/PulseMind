@@ -1,92 +1,216 @@
-# Nirvaan AI
-### Stress hits hard, but personal, simple relief is hard to find.
+# PulseMind 🧠💙
 
-Nirvaan Stress Reliever is a web application designed to provide personalized mental health support. It offers tailored recommendations for stress-relieving songs, movies, and books, an AI chatbot for instant relief, a community forum to connect users, and a profile with a happiness meter to track well-being—all built to make stress relief accessible and engaging.
+<div align="center">
+  <img src="public/PulseMindlogo.png" alt="PulseMind Logo" width="200"/>
+  
+  ### *Your Personal Mental Wellness Companion*
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue.svg)](https://www.typescriptlang.org/)
+  [![Vite](https://img.shields.io/badge/Vite-5+-purple.svg)](https://vitejs.dev/)
+</div>
 
-### Features
-Personalized Recommendations: Curated songs, movies, and books based on your mood or preferences.
+## 🌟 Overview
 
-Happiness Meter: A quick quiz to calculate and display your happiness score on your profile.
+PulseMind is a comprehensive mental health and wellness platform that combines AI-powered therapy, mood tracking, mindfulness exercises, and personalized recommendations to support your mental well-being journey. Built with modern web technologies, PulseMind offers an intuitive and engaging experience for users seeking mental health support.
 
-AI Chatbot: Real-time chat support for stress relief (pending full integration).
+## ✨ Features
 
-Community Forum: Share and explore stress-busting tips with others.
+### 🤖 **AI-Powered Chat Therapy**
+- Intelligent chatbot for 24/7 mental health support
+- Personalized conversations based on mood and context
+- Safe space for expressing thoughts and feelings
 
-User Profile: View your details, happiness score, and preferences.
+### 📊 **Mood Assessment & Tracking**
+- Comprehensive mood evaluation system
+- Visual mood tracking with calendar integration
+- Progress monitoring and insights
 
-### Tech Stack
-Frontend: React.js
+### 🧘 **Therapy Sessions**
+- **Audio Therapy**: Guided meditation and relaxation sessions
+- **Physical Therapy**: Yoga and exercise routines
+- **Laughing Therapy**: Curated content for mood enhancement
+- **Reading Therapy**: Personalized book and article recommendations
 
-Backend: Node.js with Express.js
+### 👨‍⚕️ **Doctor Consultation**
+- Professional consultation booking system
+- Secure communication with licensed therapists
+- Appointment scheduling and management
 
-Database: MongoDB with Mongoose
+### 📅 **Personal Management**
+- Task creation and management
+- Event scheduling and reminders
+- Goal setting and achievement tracking
 
-Dependencies: Open AI API (chatbot)
+### 🎯 **Smart Recommendations**
+- AI-driven content suggestions
+- Personalized therapy recommendations
+- Activity suggestions based on mood patterns
 
+### 🔐 **Secure Authentication**
+- Google OAuth integration
+- Secure user profile management
+- Privacy-focused data handling
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React 18+** with TypeScript
+- **Vite** for fast development and building
+- **Tailwind CSS** for modern, responsive styling
+- **Framer Motion** for smooth animations
+- **React Router** for navigation
+
+### Backend
+- **Node.js** with Express.js
+- **RESTful API** architecture
+- **JWT** authentication
+
+### Development Tools
+- **ESLint** for code quality
+- **PostCSS** for CSS processing
+- **TypeScript** for type safety
+
+### Additional Integrations
+- **Google OAuth** for authentication
+- **Vanta.js** for interactive backgrounds
+- **Voice recognition** capabilities
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm or yarn package manager
+- Modern web browser
 
 ### Installation
 
-#### Prerequisites
-Node.js (v16+ recommended)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/PulseMind-AI/PulseMind.git
+   cd PulseMind
+   ```
 
-MongoDB (running locally or via cloud)
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-#### Clone the Repository
+3. **Set up environment variables**
+   ```bash
+   # Create .env file in root directory
+   cp .env.example .env
+   
+   # Add your configuration:
+   # VITE_GOOGLE_CLIENT_ID=your_google_client_id
+   # VITE_API_URL=your_api_url
+   ```
+
+4. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Start backend server** (if running locally)
+   ```bash
+   cd server
+   npm install
+   npm start
+   ```
+
+6. **Open your browser**
+   Navigate to `http://localhost:5173`
+
+## 📁 Project Structure
+
 ```
-git clone https://github.com/pranabbhardwaj137/NirvaanAI.git
-cd NirvaanAI
+PulseMind/
+├── public/                 # Static assets
+│   ├── images/            # Image resources
+│   └── PulseMindlogo.png  # Brand logo
+├── src/
+│   ├── components/        # Reusable UI components
+│   │   ├── Calendar.tsx
+│   │   ├── MoodAssessment.tsx
+│   │   ├── Notifications.tsx
+│   │   └── ...
+│   ├── pages/             # Application pages
+│   │   ├── Home.tsx
+│   │   ├── Login.tsx
+│   │   ├── AudioTherapy.tsx
+│   │   └── ...
+│   ├── features/          # Feature-specific modules
+│   │   ├── chat/          # Chat functionality
+│   │   └── voice/         # Voice recognition
+│   ├── context/           # React Context providers
+│   ├── types/             # TypeScript type definitions
+│   └── imgs/              # Application images
+├── server/                # Backend server
+└── configuration files    # Vite, TypeScript, etc.
 ```
 
-Install Dependencies
-bash
-```
-npm i // Installs node_modules for the project
-```
+## 🎯 Usage Guide
 
-Set Up Environment Variables
+### Getting Started
+1. **Sign Up/Login**: Create an account or log in with Google OAuth
+2. **Complete Profile**: Set up your personal information and preferences
+3. **Mood Assessment**: Take the initial mood evaluation
+4. **Explore Features**: Navigate through different therapy options
 
-Create a .env file in the root directory:
-```
-YOUR_API_KEY=your-openai-api-key
-```
+### Key Workflows
+- **Daily Check-in**: Use mood assessment for daily mental health tracking
+- **Therapy Sessions**: Choose from audio, physical, or reading therapy
+- **AI Chat**: Engage with the AI companion for instant support
+- **Progress Tracking**: Monitor your mental health journey over time
 
-Replace your-openai-api-key with your Open AI API key (required for chatbot).
+## 🤝 Contributing
 
+We welcome contributions to PulseMind! Here's how you can help:
 
-Run the Application
+1. **Fork the repository**
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Commit your changes**
+   ```bash
+   git commit -m 'Add amazing feature'
+   ```
+4. **Push to the branch**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **Open a Pull Request**
 
-Start MongoDB locally:
-```
-cd server
-nodemon server.js
-```
+### Development Guidelines
+- Follow TypeScript best practices
+- Maintain code quality with ESLint
+- Write meaningful commit messages
+- Test your changes thoroughly
 
-Frontend:
-
-```
-npm run dev
-```
-
-Open http://localhost:5173 (or the port Vite/React assigns) in your browser.
-
-
-### Usage
-Sign Up/Login: Register or log in with a username and password.
-
-Profile: Check your happiness score and update preferences.
-
-Happiness Meter: Take the 5-question test to see your score.
-
-Recommendations: Browse tailored stress-relief content.
-
-Community: Post or read tips in the forum.
-
-Chatbot: Chat for support.
-
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contributing
+## 🆘 Support
 
-Feel free to fork this project, submit issues, and create pull requests. Contributions are welcome!
+If you need help or have questions:
+
+- 📧 Email: support@pulsemind.ai
+- 💬 GitHub Issues: [Create an issue](https://github.com/PulseMind-AI/PulseMind/issues)
+- 📖 Documentation: [Wiki](https://github.com/PulseMind-AI/PulseMind/wiki)
+
+## 🌟 Acknowledgments
+
+- Thanks to all contributors who help make PulseMind better
+- Special thanks to the mental health community for inspiration
+- Built with ❤️ for better mental wellness
+
+---
+
+<div align="center">
+  <strong>Made with 💙 by the PulseMind Team</strong>
+  <br>
+  <em>Supporting mental wellness, one pulse at a time</em>
+</div>
