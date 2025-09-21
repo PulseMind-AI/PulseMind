@@ -38,11 +38,6 @@ PulseMind is a comprehensive mental health and wellness platform that combines A
 - Secure communication with licensed therapists
 - Appointment scheduling and management
 
-### 📅 **Personal Management**
-- Task creation and management
-- Event scheduling and reminders
-- Goal setting and achievement tracking
-
 ### 🎯 **Smart Recommendations**
 - AI-driven content suggestions
 - Personalized therapy recommendations
